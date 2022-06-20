@@ -10,10 +10,10 @@ import {
 } from '@nestjs/common';
 import { Roles } from 'src/auth/decorators/roles.decorator';
 import { Role } from 'src/auth/enums/role.enum';
-import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
+import { JwtAuthGuard } from 'src/auth/guards/jwt.guard';
 import { RolesGuard } from 'src/auth/guards/roles.guard';
 import { CartService } from './cart.service';
-import { ItemDTO } from './dtos/item.dto';
+import { ItemDTO } from '../user/dtos/item.dto';
 
 @Controller('cart')
 export class CartController {
